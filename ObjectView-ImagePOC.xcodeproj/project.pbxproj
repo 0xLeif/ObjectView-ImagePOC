@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		2912B1C825571C1D0022A88C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2912B1C725571C1D0022A88C /* ContentView.swift */; };
 		2912B1CA25571C200022A88C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2912B1C925571C200022A88C /* Assets.xcassets */; };
 		2912B1CD25571C200022A88C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2912B1CC25571C200022A88C /* Preview Assets.xcassets */; };
+		2912B1D725571C390022A88C /* SUIObject in Frameworks */ = {isa = PBXBuildFile; productRef = 2912B1D625571C390022A88C /* SUIObject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2912B1D725571C390022A88C /* SUIObject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = "ObjectView-ImagePOC";
+			packageProductDependencies = (
+				2912B1D625571C390022A88C /* SUIObject */,
+			);
 			productName = "ObjectView-ImagePOC";
 			productReference = 2912B1C225571C1D0022A88C /* ObjectView-ImagePOC.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 2912B1B925571C1D0022A88C;
+			packageReferences = (
+				2912B1D525571C390022A88C /* XCRemoteSwiftPackageReference "SUIObject" */,
+			);
 			productRefGroup = 2912B1C325571C1D0022A88C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2912B1D525571C390022A88C /* XCRemoteSwiftPackageReference "SUIObject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/0xLeif/SUIObject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2912B1D625571C390022A88C /* SUIObject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2912B1D525571C390022A88C /* XCRemoteSwiftPackageReference "SUIObject" */;
+			productName = SUIObject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2912B1BA25571C1D0022A88C /* Project object */;
 }
